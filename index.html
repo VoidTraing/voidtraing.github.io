@@ -1,1423 +1,475 @@
-
-<!DOCTYPE html>
-<html id="XenForo" lang="tr-TR" dir="LTR" class="Public NoJs uix_javascriptNeedsInit LoggedOut Sidebar RunDeferred Responsive pageIsLtr   not_hasTabLinks  hasSearch   is-sidebarOpen hasRightSidebar is-setWidth navStyle_0 pageStyle_0 hasFlexbox" xmlns:fb="http://www.facebook.com/2008/fbml">
-<head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<base href="https://www.uniocraft.com/" />
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">
-			var _b = document.getElementsByTagName('base')[0], _bH = "https://www.uniocraft.com/";
-			if (_b && _b.href != _bH) _b.href = _bH;
-		</script>
-<title>UnioCraft</title>
-<noscript><style>.JsOnly, .jsOnly { display: none !important; }</style></noscript>
-<link rel="stylesheet" href="css.php?css=xenforo,form,public&amp;style=5&amp;dir=LTR&amp;d=1551203217" />
-<link rel="stylesheet" href="css.php?css=EWRporta2,EWRporta2_ArticleList,EWRporta2_Global,login_bar,message_user_info,moderator_bar,profile_post_list_simple,thread_list_simple,uix_extendedFooter&amp;style=5&amp;dir=LTR&amp;d=1551203217" />
-<link rel="stylesheet" href="css.php?css=uix,uix_style&amp;style=5&amp;dir=LTR&amp;d=1551203217" />
-<style>
-	/*** UIX -- PER USER STYLES ***/
-
-	
-
-	
-
-
-	
-
-</style>
-<link rel="stylesheet" href="css.php?css=EXTRA&amp;style=5&amp;dir=LTR&amp;d=1551203217" />
-<style>
-/* Node Styling */
-.node.node_30 > .nodeInfo {}
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51117502-1" type="7d95d3601f6bd2b818a1832a-text/javascript"></script>
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-	
-		gtag('config', 'UA-51117502-1');
-	</script>
-<link href="styles/uix/uix/css/font-awesome.min.css" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Open+Sans|Raleway:500' rel='stylesheet' type='text/css'>
-<script src="js/jquery/jquery-1.11.0.min.js" type="7d95d3601f6bd2b818a1832a-text/javascript"></script>
-<script src="js/xenforo/xenforo.js?_v=66d2fe1a" type="7d95d3601f6bd2b818a1832a-text/javascript"></script>
-<script src="js/8wayrun/EWRporta2_ajax.js?_v=21" type="7d95d3601f6bd2b818a1832a-text/javascript"></script>
-<!--[if lt IE 9]>
-	
-		 
-        	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-	        
-	        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-	        
-	        <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-	
-
-<![endif]-->
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">
-	uix = {
-		elm: {},
-		fn:{},
-		init: function(){
-			if (uix.betaMode) {
-				console.group('uix.%cinit()', 'color:#3498DB');
-			}
-			for(var x=0;x<uix.events.init.length;x++){
-				uix.events.init[x]()
-		  	}
-		  	console.groupEnd('uix.%cinit()','color:#3498DB')
-		},
-	  	events: {init:[]},
-	  	on: function(event, fn){
-	  		if(event=='init'){
-	  			uix.events.init.push(fn)
-	  		}
-	  	},
-
-		betaMode				: parseInt('0'),
-		jsPathUsed				: 'uix_style',
-		jsGlobal				: parseInt('0'),
-
-
-	  	version					: '1.5.12.0',
-	  	jsHeadVersion				: '1.5.12.0',
-	  	addonVersion				: '1010173',
-	  	jsCacheBust				: '1',
-	  	contentTemplate				: 'EWRporta2_ArticleList',
-
-		javascriptInitHide			: parseInt('1'),
-		globalPadding 				: parseInt('16px'),
-		sidebarWidth				: parseInt('300px'),
-		mainContainerMargin  	        	: '316px',
-		maxResponsiveWideWidth   		: parseInt('800px'),
-		maxResponsiveMediumWidth 		: parseInt('610px'),
-		maxResponsiveNarrowWidth 		: parseInt('480px'),
-		sidebarMaxResponsiveWidth		: parseInt('800px'),
-		
-			responsiveMessageBreakpoint		: parseInt('610px'),
-		
-		sidebarMaxResponsiveWidthStr		: '800px',
-
-		
-			offCanvasRightTriggerWidth	: parseInt('800px'),
-		
-
-		
-			offCanvasLeftTriggerWidth	: parseInt('800px'),
-		
-
-		
-			
-				offCanvasNavTriggerWidth	: parseInt('800px'),
-			
-		
-		
-			
-				offCanvasVisitorTriggerWidth	: parseInt('800px'),
-			
-		
-
-		offcanvasTriggerAnimationDuration	: parseInt('300ms'),
-
-
-
-
-		dropdownMenuAnimationSpeed		: parseInt('0ms'),
-		inlineAlertBalloons			: (parseInt('1') && !parseInt('1')) || parseInt('1'),
-
-		jumpToFixedDelayHide			: parseInt('1'),
-
-		stickyNavigationMinWidth 		: parseInt('0'),
-		stickyNavigationMinHeight		: parseInt('600'),
-		stickyNavigationMaxWidth 		: parseInt('0'),
-		stickyNavigationMaxHeight		: parseInt('0'),
-		stickyNavigationPortraitMinWidth 	: parseInt('320'),
-		stickyNavigationPortraitMinHeight	: parseInt('500'),
-		stickyNavigationPortraitMaxWidth 	: parseInt('0'),
-		stickyNavigationPortraitMaxHeight	: parseInt('0'),
-		stickySidebar 				: 1,
-		
-			sidebarInnerFloat		: "right",
-		
-		RTL					: 0,
-		stickyItems 				: {},
-		stickyGlobalMinimumPosition		: parseInt('200px'),
-		stickyGlobalScrollUp			: parseInt('0'),
-		stickyDisableIOSThirdParty		: parseInt('1'),
-		preventAlwaysSticky			: parseInt('0'),
-
-		searchMinimalSize			: parseInt('610px'),
-
-		searchPosition				: parseInt('100'),
-
-		nodeStyle				: parseInt('0'),
-		pageStyle				: parseInt('0'),
-
-		enableBorderCheck			: parseInt('1'),
-		enableULManager				: parseInt('1'),
-
-		threadSlidingAvatar			: parseInt('0'),
-		threadSlidingExtra			: parseInt('0'),
-		threadSlidingHover			: parseInt('0'),
-		threadSlidingStaffShow			: parseInt('0'),
-		threadSlidingGlobalEnable		: parseInt('0'),
-
-		signatureHidingEnabled			: parseInt('0'),
-		signatureHidingEnabledAddon		: parseInt('0'),
-		signatureMaxHeight			: parseInt('100px'),
-		signatureHoverEnabled			: parseInt('0'),
-
-		enableStickyFooter 			: parseInt('1'),
-		stickyFooterBottomOffset 		: parseInt('16px') * 2,
-
-		
-			sidebarStickyBottomOffset	: parseInt(0),
-		
-
-	  	
-			offCanvasSidebar			: 1,
-
-			
-				offCanvasSidebarVisitorTabs		: 1,
-			
-
-		
-
-		offcanvasLeftStatic			: 1 && parseInt('0') && parseInt('1'),
-		offcanvasRightStatic			: 0 && parseInt('0') && parseInt('1'),
-		offcanvasLeftStaticBreakpoint		: parseInt('1300px'),
-		offcanvasRightStaticBreakpoint		: parseInt('1300px'),
-
-		reinsertWelcomeBlock			: parseInt('0'),
-
-		sidebarCookieExpire			: '',
-		canCollapseSidebar			: '',
-
-		cookiePrefix				: 'xf_',
-		sidebarLocation 			: parseInt('0'),
-
-		collapsibleSidebar			: parseInt('1'),
-		collapsedNodesDefault			: '',
-		nodeGridCollapseEnabled			: parseInt('1'),			
-		widthToggleUpper			: '100%',
-		widthToggleLower			: '1170px',
-		
-			toggleWidthEnabled		: parseInt('1'),
-		
-		toggleWidthBreakpoint			: parseInt('1202'),
-		collapsibleNodes			: parseInt('0'),
-		collapsibleSticky			: parseInt('1'),
-		ajaxWidthToggleLink			: 'uix/toggle-width',
-		ajaxStickyThreadToggleLink		: 'uix/toggle-sticky-threads',
-		ajaxStickyThreadExpandLink		: 'uix/expand-sticky-threads',
-		ajaxStickyThreadCollapseLink		: 'uix/collapse-sticky-threads',
-		ajaxSidebarToggleLink			: 'uix/toggle-sidebar',
-
-		stickySidebarDelayInit			: parseInt('1'),
-		stickySidebarLegacy			: parseInt('1'),
-		stickySidebarDisableIOS			: parseInt('1'),
-
-		user					: {
-								'themeName'		: 'UnioCraft',
-								'-themeParents'		: '5,2,0',
-								'-themeModified'	: '1551203217',
-								'-themeSelectable'	: '1',
-								languageName		: 'Türkçe (TR)',
-								stickyEnableUserbar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
-								stickyEnableNav		: (parseInt('') == parseInt('')) ? parseInt('') : true,
-								stickyEnableSidebar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
-								widthToggleState	: (parseInt('0') == parseInt('0')) ? parseInt('0') : parseInt('0'),
-								stickyThreadsState	: (parseInt('') == parseInt('')) ? (parseInt('') > 0) : 0,
-								
-									sidebarState	: 0,
-								
-								
-									collapseUserInfo : 1,
-								
-								
-									signatureHiding : 1,
-								
-								isAdmin			: parseInt('0"')
-							}
-	};
-
-	if(uix.stickyNavigationMaxWidth == 0){uix.stickyNavigationMaxWidth = 999999}
-	if(uix.stickyNavigationMaxHeight == 0){uix.stickyNavigationMaxHeight = 999999}
-	if(uix.stickyNavigationPortraitMaxWidth == 0){uix.stickyNavigationPortraitMaxWidth = 999999}
-	if(uix.stickyNavigationPortraitMaxHeight == 0){uix.stickyNavigationPortraitMaxHeight = 999999}
-
-	
-		uix.stickyItems['#navigation'] = {normalHeight:parseInt('64'), stickyHeight:parseInt('48')}
-
-		var subElement = null;
-		
-			uix.stickyItems['#navigation'].options = {scrollSticky: uix.stickyGlobalScrollUp }
-		
-
-	
-
-	
-
-	$(document).ready(function(){
-
-	//put jquery code here
-
-
-});
-
-	uix.debug = function() {
-		result = "\n\n############============   Begin Copying Here   ============############\n\n";
-		result += "Error: the functions file was not found.";
-		result += "\n\n############============   End Copying Here   ============############\n\n";
-
-		uix.fixJsVisibility();
-
-		console.log(result);
-	}
-
-</script>
-<script src="js/audentio/uix_style/functions.min.js?_v=66d2fe1a_1.5.12.0_1" type="7d95d3601f6bd2b818a1832a-text/javascript"></script>
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">
-	uix.adminJsError = function(errMsg) {
-		console.error(errMsg);
-
-		
-	}
-
-	uix.fixJsVisibility = function() {
-		var userBar = $('.hasJs #userBar');
-		var nodeList = $('.hasJs #forums, .hasJs .category_view .nodeList, .hasJs .watch_forums .nodeList');
-		var panels = $('.js-uix_panels')
-		if (userBar.length) userBar.css('display', 'block');
-		if (nodeList.length) nodeList.css('visibility', 'visible');
-		if (panels.length) $('.js-uix_panels').removeClass('needsInit');
-		$('html').removeClass('uix_javascriptNeedsInit');
-	}
-
-	uix.catchJsError = function(err) {
-		console.log("\n\n############============   Begin Copying Here   ============############\n\n")
-		var errMsg = "Uh Oh!  It looks like there's an error in your page's javascript.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this and believe it is due to a bug in your Audentio Design theme, contact Audentio support and include a copy of the text between the designated areas from your javascript console.  This is the error: \n\n" + err ;
-		uix.fixJsVisibility();
-		uix.adminJsError(errMsg);
-		console.log("\n\n");
-		console.log(err);
-		console.log("\n\n");
-		try {
-			uix.debug(true);
-		} catch (err) {
-			console.log("Unable to include uix.debug();");
-		}
-
-		console.log("\n\n############============   End Copying Here   ============############\n\n");
-	}
-
-	$(document).ready(function(){
-		if (typeof(audentio) === 'undefined' || typeof(uix.jsVersion) === 'undefined') {
-			var errMsg = 'Uh Oh!  It looks like the javascript for your theme was not found in /js/audentio/uix_style/.\n\n';
-			if (uix.jsGlobal) {
-				errMsg += 'Your forum is set to use the same javascript directory for all your themes.  Consider disabling this or modifying the directory.  Options are located under Options > [UI.X] General.\n\n'
-			} else {
-				errMsg += 'Your theme has set the location of its javascript directory.  You may need to modify the javascript directory location style property located under [UI.X] Global Settings > Javascript Path.\n\n'
-			}
-			errMsg += 'If your files are in the directory specified, ensure that your file permissions allow them to be read.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this, contact Audentio support.  This error has also been logged to the javascript console.';
-
-			uix.fixJsVisibility();
-
-			uix.adminJsError(errMsg);
-		} else if (uix.jsHeadVersion.split('_')[0] != uix.jsVersion.split('_')[0]) {
-			var errMsg = 'Uh Oh! It looks like the version of your javascript functions file does not match the version of your page_container_js_head template.  \n\nYour javascript functions file is version "' + uix.jsVersion + '". \nYour page_container_js_head is version "' + uix.jsHeadVersion + '".  \n\nIf your functions file version number is higher, ensure that you have merged all templates (especially page_container_js_head).  If your page_container_js_head version number is higher, ensure that you have correctly uploaded the latest version of the javascript functions file and that you have cleared anything that could cache an old version of the javascript (CDN / Cloudflare / etc.). \n\nThis issue could cause parts of your forum to not display or function correctly.  If this does not resolve the issue contact Audentio support.  This error has also been logged to the javascript console.';
-			
-			uix.fixJsVisibility();
-			
-			uix.adminJsError(errMsg);
-		}
-	});
-</script>
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">
-	try {
-		uix.dateHelper.phrase = {
-			now: 'şu an',
-			second: 'sa',
-			minute: 'd',
-			hour: 's',
-			day: 'g',
-			week: 'w',
-			year: 'y',
-			century: 'c',
-			ago: '{time} önce',
-			future: 'in {time}'
-		}
-
-
-		uix.sticky.stickyMinDist = parseInt('50');
-
-		$(document).ready(function(){
-			try {
-				
-				
-					audentio.pagination.enabled = true;
-					
-						audentio.grid.parentEle = 'navigation';
-					
-					audentio.pagination.outOfPhrase = '<span id="audentio_postPaginationCurrent" class="uix_postPagination_x"></span> / <span id="audentio_postPaginationTotal" class="uix_postPagination_y"></span>';
-					audentio.pagination.enterIndexPhrase = 'Enter Index';
-					audentio.pagination.offset = parseInt('0px');
-				
-
-				uix.initFunc();
-			} catch (err) {
-				uix.catchJsError(err);
-			}
-		});
-	} catch (err) {
-		uix.catchJsError(err);
-	}
-</script>
-<link rel="apple-touch-icon" href="https://www.uniocraft.com/styles/unio/logo.og.png" />
-<link rel="alternate" type="application/rss+xml" title="UnioCraft için RSS beslemeleri" href="forum/-/index.rss" />
-<meta name="description" content="UnioCraft bir Minecraft sunucusudur" />
-<link rel="next" href="?page=2" />
-<link rel="alternate" type="application/rss+xml" title="Yazılar - UnioCraft için RSS beslemeleri" href="https://www.uniocraft.com/articles/index.rss" />
-<meta property="og:site_name" content="UnioCraft" />
-<meta property="og:image" content="https://www.uniocraft.com/styles/unio/logo.og.png" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.uniocraft.com/" />
-<meta property="og:title" content="UnioCraft" />
-<meta property="og:description" content="UnioCraft bir Minecraft sunucusudur" />
-<meta name="theme-color" content="rgb(121, 7, 9)">
-<meta name="msapplication-TileColor" content="rgb(121, 7, 9)">
-
-<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js" async type="7d95d3601f6bd2b818a1832a-text/javascript"></script>
-</head>
-<body>
-<div id="loginBar">
-<div class="pageContent">
-<span class="helper"></span>
-</div>
-<div class="pageWidth">
-</div>
-</div>
-<div class="js-uix_panels uix_panels ">
-<aside class="js-sidePanelWrapper sidePanelWrapper  sidePanelWrapper--left">
-<a href="#" class="js-panelMask uix_panelMask"></a>
-<div class="sidePanel sidePanel--nav">
-<nav>
-<ul class="sidePanel__navTabs">
-
-
-<li class="navTab articles selected">
-<a href="https://www.uniocraft.com/" class="navLink">Anasayfa</a>
-<a href="https://www.uniocraft.com/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
-<div class="tabLinks">
-<ul class="secondaryContent blockLinksList">
-<li><a href="find-new/posts" rel="nofollow">Son Mesajlar</a></li>
-<li><a href="recent-activity/">Son Etkinlikler</a></li>
-</ul>
-</div>
-</li>
-
-<li class="navTab forums ">
-<a href="https://www.uniocraft.com/forum/" class="navLink">Forumlar</a>
-<a href="https://www.uniocraft.com/forum/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
-<div class="tabLinks">
-<ul class="secondaryContent blockLinksList">
-<li><a href="arama/?type=post">Forumları Ara</a></li>
-<li><a href="find-new/posts" rel="nofollow">Son Mesajlar</a></li>
-</ul>
-</div>
-</li>
-
-
-<li class="navTab members ">
-<a href="https://www.uniocraft.com/uyeler/" class="navLink">Üyeler</a>
-<a href="https://www.uniocraft.com/uyeler/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
-<div class="tabLinks">
-<ul class="secondaryContent blockLinksList">
-<li><a href="uyeler/">Dikkat Çeken Üyeler</a></li>
-<li><a href="online/">Çevrimiçi Üyeler</a></li>
-<li><a href="recent-activity/">Son Etkinlikler</a></li>
-<li><a href="find-new/profile-posts">Yeni Profil Mesajları</a></li>
-</ul>
-</div>
-</li>
-
-<li class="navTab siropuCustomTab custom-tab-1 ">
-<a href="market/" class="navLink marketNavClass" style="position: relative;">Market</a>
-<a href="market/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
-<div class="tabLinks">
-<ul class="secondaryContent blockLinksList">
-<li><a href="market/?p=kredi" class="">Kredi Yükle</a></li>
-<li><a href="market/?p=vip" class="">VIP Al</a></li>
-<li><a href="market/?p=ozelesya" class="">Özel Eşya Al</a></li>
-<li><a href="market/?p=skinDegistir" class="">Skin Değiştir</a></li>
-</ul>
-</div>
-</li>
-<li class="navTab siropuCustomTab custom-tab-2 ">
-<a href="istatistikler/" class="navLink">İSTATİSTİKLER</a>
-<a href="istatistikler/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
-<div class="tabLinks">
-<ul class="secondaryContent blockLinksList">
-<li><a href="istatistikler/?p=solosgtop100" class="">SoloSG Top 100</a></li>
-<li><a href="istatistikler/?p=teamsgtop100" class="">TeamSG Top 100</a></li>
-<li><a href="istatistikler/?p=hackpvptop100" class="">HackPvP Top 100</a></li>
-<li><a href="istatistikler/?p=soloskywarstop100" class="">SoloSkywars Top 100</a></li>
-<li><a href="istatistikler/?p=duoskywarstop100" class="">DuoSkywars Top 100</a></li>
-</ul>
-</div>
-</li>
-<li class="navTab destek ">
-<a href="destek/" class="navLink">Destek</a>
-<a href="destek/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
-<div class="tabLinks">
-<ul class="secondaryContent blockLinksList">
-<li><a href="help/" class="">Forum Yardımı</a></li>
-</ul>
-</div>
-</li>
-<li class="navTab siropuCustomTab custom-tab-14 ">
-<a href="https://www.uniocraft.com/konu/minecraft-İndirme-adresi.1530/" class="navLink">MINECRAFT İNDİR</a>
-</li>
-</ul>
-</nav>
-</div>
-</aside>
-<aside class="js-sidePanelWrapper sidePanelWrapper  sidePanelWrapper--right">
-<a href="#" class="js-panelMask uix_panelMask"></a>
-<div class="sidePanel sidePanel--login">
-<form action="login/login" method="post" class="xenForm--uixLoginForm xenForm">
-<dl class="ctrlUnit fullWidth">
-<dt><label for="ctrl_pageLogin_login">Kullanıcı adı yada e-posta:</label></dt>
-<dd><input type="text" name="login" value="" id="ctrl_pageLogin_login" class="textCtrl uix_fixIOSClickInput" tabindex="21" /></dd>
-</dl>
-<dl class="ctrlUnit fullWidth">
-<dt><label for="ctrl_pageLogin_password">Şifre:</label></dt>
-<dd>
-<input type="password" name="password" class="textCtrl uix_fixIOSClickInput" id="ctrl_pageLogin_password" tabindex="22" />
-<div><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="26">Şifrenizi mi unuttunuz?</a></div>
-</dd>
-</dl>
-<dl class="ctrlUnit submitUnit">
-<dd>
-<input type="submit" class="button primary" value="Giriş Yap" data-loginPhrase="Giriş Yap" data-signupPhrase="Üye ol" tabindex="24" />
-<label class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_pageLogin_remember" tabindex="23" /> Beni hatırla</label>
-</dd>
-</dl>
-<input type="hidden" name="cookie_check" value="1" />
-<input type="hidden" name="_xfToken" value="" />
-<input type="hidden" name="redirect" value="/" />
-</form>
-</div>
-</aside>
-<div class="mainPanelWrapper">
-<a href="#" class="js-panelMask uix_panelMask"></a>
-<div class="uix_wrapperFix" style="height: 1px; margin-bottom: -1px;"></div>
-<div id="uix_wrapper">
-<div class="uix_wrapperFix" style="height: 1px; margin-bottom: -1px;"></div>
-<div id="headerMover">
-<div id="headerProxy"></div>
-<header>
-<div id="header">
-<div id="userBar" class="header__blockItem  ">
-<div class="sticky_wrapper">
-<div class="pageWidth">
-<div class="pageContent">
-<div class="navTabs">
-<div class="pageWidth">
-<ul class="navLeft">
-<div class="navSocial">
-<div class="socialContainer">
-<a target="_blank" href="https://www.facebook.com/uniocraft">
-<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-</a>
-<a target="_blank" href="https://www.instagram.com/uniocraft">
-<span><i class="fa fa-instagram" aria-hidden="true"></i></span>
-</a>
-<a target="_blank" href="https://www.twitter.com/uniocraft">
-<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-</a>
-<a target="_blank" href="https://www.youtube.com/uniocraft">
-<span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
-</a>
-<a target="_blank" href="https://www.twitch.tv/uniogaming">
-<span><i class="fa fa-twitch"></i></span>
-</a>
-<a target="_blank" href="https://discordapp.com/invite/3BdHDv5">
-<span><i class="fa fa-discord-alt" aria-hidden="true"></i></span>
-</a>
-</div>
-</div>
-</ul>
-</div>
-<div class="pageWidth">
-<ul class="navRight visitorTabs">
-<li class="navTab login Popup PopupControl PopupClosed">
-<a href="login/" class="navLink uix_dropdownDesktopMenu NoPopupGadget" rel="Menu">
-<i class="uix_icon uix_icon-signIn"></i>
-<strong class="loginText">GİRİŞ YAP</strong>
-</a>
-<div class="Menu JsOnly tabMenu uix_fixIOSClick">
-<div class="secondaryContent">
-<form action="login/login" method="post" class="xenForm--uixLoginForm xenForm">
-<dl class="ctrlUnit fullWidth">
-<dt><label for="ctrl_pageLogin_login">Kullanıcı adı yada e-posta:</label></dt>
-<dd><input type="text" name="login" value="" id="ctrl_pageLogin_login" class="textCtrl uix_fixIOSClickInput" tabindex="1" /></dd>
-</dl>
-<dl class="ctrlUnit fullWidth">
-<dt><label for="ctrl_pageLogin_password">Şifre:</label></dt>
-<dd>
-<input type="password" name="password" class="textCtrl uix_fixIOSClickInput" id="ctrl_pageLogin_password" tabindex="2" />
-<div><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="6">Şifrenizi mi unuttunuz?</a></div>
-</dd>
-</dl>
-<dl class="ctrlUnit submitUnit">
-<dd>
-<input type="submit" class="button primary" value="Giriş Yap" data-loginPhrase="Giriş Yap" data-signupPhrase="Üye ol" tabindex="4" />
-<label class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_pageLogin_remember" tabindex="3" /> Beni hatırla</label>
-</dd>
-</dl>
-<input type="hidden" name="cookie_check" value="1" />
-<input type="hidden" name="_xfToken" value="" />
-<input type="hidden" name="redirect" value="/" />
-</form>
-</div>
-</div>
-</li>
-<li class="pulse navTab register PopupClosed">
-<a href="register/" class="navLink">
-<i class="uix_icon uix_icon-register"></i>
-<strong>ÜYE OL</strong>
-</a>
-</li>
-</ul>
-</div>
-</div>
-<span class="helper"></span>
-</div>
-</div>
-</div>
-</div>
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">if (typeof(uix) !== "undefined" && typeof(uix.templates) !== "undefined") uix.templates.userBar();</script>
-<div id="logoBlock" class="header__blockItem ">
-<div class="pageWidth">
-<div class="pageContent">
-<div id="logo"><a href="https://www.uniocraft.com/">
-<span></span>
-<img src="styles/unio/logo.png" alt="UnioCraft" />
-</a></div>
-<span class="helper"></span>
-</div>
-</div>
-</div>
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">
-		new Clipboard('#asdf');
-		
-		$( document ).ready(function() {
-
-		$('#asdf').click(function() {
-		$(this).queue(function() {
-		$(this).html('<i class="fa fa-check"></i><span>IP adresi kopyalandı!</span>').delay(2000).dequeue();
-		})
-		$(this).queue(function() {
-		$(this).html('<span>PLAY.UNIOCRAFT.COM</span>').dequeue();
-		})
-		});
-		
-		});
-	</script>
-<div class="pageWidth">
-<div class="header_online">
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">
-				$.getJSON('https://mcapi.us/server/status?ip=play.uniocraft.com', function(status) {
-				document.querySelector('.player_count').innerHTML = '<span class="player_count">' + status.players.now + '</span>';
-				});
-			</script>
-<ul class="server_info">
-<li class="server_information">Hemen</li>
-<li class="server_information"><span class="player_count"></span></li>
- <li class="server_information">oyuncuyla birlikte oyna:</li>
-<li id="asdf" data-clipboard-text="PLAY.UNIOCRAFT.COM" title="Kopyalamak için tıkla!" class="server_information server_ip">PLAY.UNIOCRAFT.COM</li>
-</ul>
-</div>
-</div>
-<div id="navigation" class="header__blockItem  stickyTop">
-<div class="sticky_wrapper">
-<div class="uix_navigationWrapper">
-<div class="pageWidth">
-<div class="pageContent">
-<nav>
-<div class="navTabs">
-<ul class="publicTabs navLeft">
-<li class="navTab  navTab--panelTrigger navTab--navPanelTrigger PopupClosed">
-<a class="navLink js-leftPanelTrigger" href="#">
-<i class="uix_icon uix_icon-menu"></i><span class="trigger__phrase">Menu</span>
-</a>
-</li>
-
-
-<li class="navTab articles selected Popup PopupControl PopupClosed">
-<a href="https://www.uniocraft.com/" class="navLink">Anasayfa</a>
-<a href="https://www.uniocraft.com/" class="SplitCtrl" rel="Menu"></a>
-<div class="Menu JsOnly tabMenu articlesTabLinks">
-<div class="primaryContent menuHeader">
-<h3>Anasayfa</h3>
-<div class="muted">Hızlı Bağlantılar</div>
-</div>
-<ul class="secondaryContent blockLinksList">
-<li><a href="find-new/posts" rel="nofollow">Son Mesajlar</a></li>
-<li><a href="recent-activity/">Son Etkinlikler</a></li>
-</ul>
-</div>
-</li>
-
-<li class="navTab forums  Popup PopupControl PopupClosed">
-<a href="https://www.uniocraft.com/forum/" class="navLink">Forumlar</a>
-<a href="https://www.uniocraft.com/forum/" class="SplitCtrl" rel="Menu"></a>
-<div class="Menu JsOnly tabMenu forumsTabLinks">
-<div class="primaryContent menuHeader">
-<h3>Forumlar</h3>
-<div class="muted">Hızlı Bağlantılar</div>
-</div>
-<ul class="secondaryContent blockLinksList">
-<li><a href="arama/?type=post">Forumları Ara</a></li>
-<li><a href="find-new/posts" rel="nofollow">Son Mesajlar</a></li>
-</ul>
-</div>
-</li>
-
-
-<li class="navTab members  Popup PopupControl PopupClosed">
-<a href="https://www.uniocraft.com/uyeler/" class="navLink">Üyeler</a>
-<a href="https://www.uniocraft.com/uyeler/" class="SplitCtrl" rel="Menu"></a>
-<div class="Menu JsOnly tabMenu membersTabLinks">
-<div class="primaryContent menuHeader">
-<h3>Üyeler</h3>
-<div class="muted">Hızlı Bağlantılar</div>
-</div>
-<ul class="secondaryContent blockLinksList">
-<li><a href="uyeler/">Dikkat Çeken Üyeler</a></li>
-<li><a href="online/">Çevrimiçi Üyeler</a></li>
-<li><a href="recent-activity/">Son Etkinlikler</a></li>
-<li><a href="find-new/profile-posts">Yeni Profil Mesajları</a></li>
-</ul>
-</div>
-</li>
-
-<li class="navTab siropuCustomTab custom-tab-1  Popup PopupControl PopupClosed">
-<a href="market/" class="navLink marketNavClass" style="position: relative;">Market</a>
-<a href="market/" class="SplitCtrl" rel="Menu"></a>
-<div class="Menu JsOnly tabMenu siropuCustomTab custom-tab-1TabLinks">
-<div class="primaryContent menuHeader">
-<h3>Market</h3>
-<div class="muted">Hızlı Bağlantılar</div>
-</div>
-<ul class="secondaryContent blockLinksList">
-<li><a href="market/?p=kredi" class="">Kredi Yükle</a></li>
-<li><a href="market/?p=vip" class="">VIP Al</a></li>
-<li><a href="market/?p=ozelesya" class="">Özel Eşya Al</a></li>
-<li><a href="market/?p=skinDegistir" class="">Skin Değiştir</a></li>
-</ul>
-</div>
-</li>
-<li class="navTab siropuCustomTab custom-tab-2  Popup PopupControl PopupClosed">
-<a href="istatistikler/" class="navLink">İSTATİSTİKLER</a>
-<a href="istatistikler/" class="SplitCtrl" rel="Menu"></a>
-<div class="Menu JsOnly tabMenu siropuCustomTab custom-tab-2TabLinks">
-<div class="primaryContent menuHeader">
-<h3>İSTATİSTİKLER</h3>
-<div class="muted">Hızlı Bağlantılar</div>
-</div>
-<ul class="secondaryContent blockLinksList">
-<li><a href="istatistikler/?p=solosgtop100" class="">SoloSG Top 100</a></li>
-<li><a href="istatistikler/?p=teamsgtop100" class="">TeamSG Top 100</a></li>
-<li><a href="istatistikler/?p=hackpvptop100" class="">HackPvP Top 100</a></li>
-<li><a href="istatistikler/?p=soloskywarstop100" class="">SoloSkywars Top 100</a></li>
-<li><a href="istatistikler/?p=duoskywarstop100" class="">DuoSkywars Top 100</a></li>
-</ul>
-</div>
-</li>
-<li class="navTab destek  Popup PopupControl PopupClosed">
-<a href="destek/" class="navLink">Destek</a>
-<a href="destek/" class="SplitCtrl" rel="Menu"></a>
-<div class="Menu JsOnly tabMenu destekTabLinks">
-<div class="primaryContent menuHeader">
-<h3>Destek</h3>
-<div class="muted">Hızlı Bağlantılar</div>
-</div>
-<ul class="secondaryContent blockLinksList">
-<li><a href="help/" class="">Forum Yardımı</a></li>
-</ul>
-</div>
-</li>
-<li class="navTab siropuCustomTab custom-tab-14 PopupClosed">
-<a href="https://www.uniocraft.com/konu/minecraft-İndirme-adresi.1530/" class="navLink">MINECRAFT İNDİR</a>
-</li>
-
-<li class="navTab navigationHiddenTabs navTab--justIcon Popup PopupControl PopupClosed" style="display:none">
-<a rel="Menu" class="navLink NoPopupGadget uix_dropdownDesktopMenu"><i class="uix_icon uix_icon-navOverflow"></i><span class="uix_hide menuIcon">Menü</span></a>
-<div class="Menu JsOnly blockLinksList primaryContent" id="NavigationHiddenMenu"></div>
-</li>
-</ul>
-</div>
-<span class="helper"></span>
-</nav>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
-<div id="content" class="EWRporta2_ArticleList">
-<div class="pageWidth">
-<div class="pageContent">
-
-<div class="uix_contentFix">
-<div class="mainContainer">
-<div class="mainContent">
-<!--[if lt IE 8]>
-							<p class="importantMessage">Çok eski bir web tarayıcısı kullanıyorsunuz. Bu veya diğer siteleri görüntülemekte sorunlar yaşayabilirsiniz..<br />Tarayıcınızı güncellemeli veya <a href="https://www.google.com/chrome/browser/" target="_blank">alternatif bir tarayıcı</a> kullanmalısınız.</p>
-						<![endif]-->
-
-
-<div id="articlesGrid" class="articlesGrid  " data-masonry="" data-items=".articleItem" data-nav=".articlePager" data-next=".articlePager a:last" data-control=".articleControl">
-<div class="articleItem" id="article_28961">
-<div class="sectionMain">
-<div class="subHeading">
-<span class="prefix prefixRed">Güncelleme</span>
-<a href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-6-kasa-sistemi-ve-yaz%C4%B1-tura.28961/">Kış Güncelleme Paketi #6 - Kasa Sistemi ve Yazı Tura</a>
-</div>
-<div class="primaryContent">
-<div class="metaData">
-<span class="statData"><div class="keyIcon comments"></div>72</span>
-<span class="statData"><div class="keyIcon views"></div>2,740</span>
-<span class="dateData">
-<div class="keyIcon sticky"></div>
-<strong style="font-weight:bold;">Yazar: </strong><a href="uyeler/uniodex.1/" class="username">UnioDex</a> <strong style="font-weight:bold;">Tarih:</strong> <a href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-6-kasa-sistemi-ve-yaz%C4%B1-tura.28961/">2 Şub 2019</a> <a href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-6-kasa-sistemi-ve-yaz%C4%B1-tura.28961/">15:11</a>
-</span>
-</div>
-<div class="messageUserBlock"><div class="avatarHolder">
-<a href="uyeler/uniodex.1/" class="avatar Av1s Tooltip" title="UnioDex" itemprop="photo" data-avatarhtml="true"><span class="img s" style="background-image: url('https://minotar.net/helm/UnioDex/48.png')"></span></a>
-</div></div>
-<div class="baseHtml excerptContent ">
-<img src="https://www.uniocraft.com/images/winter6/kis6.jpg" class="bbCodeImage LbImage" alt="[&#x200B;IMG]" data-url="https://www.uniocraft.com/images/winter6/kis6.jpg" /><br />
-<br />
-Kış güncellemeleri serisinin artık sonundayız! Serinin son güncelleme paketini hazırlarken karşımıza bir çok zorluk çıktığından istediğimiz sayıda yenilik yapamasak da yine sunucuyu çok etkileyecek bir güncelleme yaptığımızı düşünüyoruz! Güncelleme yarın 13:00&#039;da sizlerle olacak! <br />
-<br />
-Aşağıya ilk defa denediğimiz seri güncelleme paketi sistemi olan kış güncelleme paketi serisiyle ilgili bazı şeyler yazdım. Düşüncelerimi merak ediyorsanız konunun sonundaki yazıyı okuyabilirsiniz Daha da uzatmadan işte yenilikler:<br />
-<br />
-<b><span style="font-family: 'Courier New'"><span style="font-size: 24px"><span style="color: #b30000">-- Kasa Sistemi --</span></span></span></b><br />
-<iframe width="500" height="300" src="https://www.youtube.com/embed/fpJkspRTh7c?wmode=opaque" frameborder="0" allowfullscreen></iframe><br />
-<br />
-Kasa sistemi! Çok uzun süredir istenen fakat bazı eksikliklerden dolayı getiremediğimiz sistem sonunda sizlerle! Toplamda 4 adet kasamız mevcut. Sunucumuza oy vererek, puan marketini kullanarak ya da kredi marketini kullanarak kasalar kazanabilirsiniz. Ayrıca düzenli olarak kasa dağıtma...
-</div>
-</div>
-<div class="sectionFooter">
-<div class="continue">
-<a class="button" href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-6-kasa-sistemi-ve-yaz%C4%B1-tura.28961/">
-Devamını Oku...
-</a>
-</div>
-</div>
-</div>
-</div><div class="articleItem" id="article_28525">
-<div class="sectionMain">
-<div class="subHeading">
-<span class="prefix prefixRed">Güncelleme</span>
-<a href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-5-yepyeni-huniler-ve-dev-performans-g%C3%BCncellemeleri.28525/">Kış Güncelleme Paketi #5 - Yepyeni Huniler ve Dev Performans Güncellemeleri</a>
-</div>
-<div class="primaryContent">
-<div class="metaData">
-<span class="statData"><div class="keyIcon comments"></div>64</span>
-<span class="statData"><div class="keyIcon views"></div>1,836</span>
-<span class="dateData">
-<div class="keyIcon sticky"></div>
-<strong style="font-weight:bold;">Yazar: </strong><a href="uyeler/uniodex.1/" class="username">UnioDex</a> <strong style="font-weight:bold;">Tarih:</strong> <a href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-5-yepyeni-huniler-ve-dev-performans-g%C3%BCncellemeleri.28525/">25 Oca 2019</a> <a href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-5-yepyeni-huniler-ve-dev-performans-g%C3%BCncellemeleri.28525/">16:29</a>
-</span>
-</div>
-<div class="messageUserBlock"><div class="avatarHolder">
-<a href="uyeler/uniodex.1/" class="avatar Av1s Tooltip" title="UnioDex" itemprop="photo" data-avatarhtml="true"><span class="img s" style="background-image: url('https://minotar.net/helm/UnioDex/48.png')"></span></a>
-</div></div>
-<div class="baseHtml excerptContent ">
-<img src="https://www.uniocraft.com/images/winter5/kis5.jpg" class="bbCodeImage LbImage" alt="[&#x200B;IMG]" data-url="https://www.uniocraft.com/images/winter5/kis5.jpg" /><br />
-<br />
-Yaklaşık 6 haftadır yaptığımız kış güncellemeleri arasında en çok uğraştığımız paket yarın 13:00&#039;da sizlerle!<br />
-<br />
-Kış güncellemeleri projesinde artık sona yaklaşılıyor. Bu süreçte bize destek olan tüm oyuncularımıza teşekkür ederiz. Haftaya cumartesi serinin son güncellemesi yapılacak ve ardından farklı güncellemelere yöneleceğiz. Güncellemeleri seri halinde yapma fikrimiz hakkında görüşlerinizi de bekliyoruz.<br />
-<br />
-İşte yenilikler:<br />
-<br />
-<b><span style="font-family: 'Courier New'"><span style="font-size: 24px"><span style="color: #b30000"><hr>-- Dev Huni Güncellemesi --</span></span></span></b><br />
-<br />
-<img src="https://www.uniocraft.com/images/winter5/huni-suction.gif" class="bbCodeImage LbImage" alt="[&#x200B;IMG]" data-url="https://www.uniocraft.com/images/winter5/huni-suction.gif" /><br />
-<br />
-<img src="https://www.uniocraft.com/images/winter5/huni-esyayakalama.png" class="bbCodeImage LbImage" alt="[&#x200B;IMG]" data-url="https://www.uniocraft.com/images/winter5/huni-esyayakalama.png" /><br />
-<br />
-<b>Rehber Videosu İçin <a href="https://www.youtube.com/watch?v=3LGF43yfz7c" target="_blank" class="externalLink" rel="nofollow">Tıklayın.</a></b><br />
-<br />
-Sunucumuzdaki lagın en büyük sebebi olan hunilere sonunda kökten bir çözüm geliştirdik! İşte yeni huni sistemi:<br />
-<ul>
-<li>Huniler artık bir sandığa ya...</li>
-</ul>
-</div>
-</div>
-<div class="sectionFooter">
-<div class="continue">
-<a class="button" href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-5-yepyeni-huniler-ve-dev-performans-g%C3%BCncellemeleri.28525/">
-Devamını Oku...
-</a>
-</div>
-</div>
-</div>
-</div><div class="articleItem" id="article_28255">
-<div class="sectionMain">
-<div class="subHeading">
-<span class="prefix prefixRed">Güncelleme</span>
-<a href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-4-skyblock-revival-ve-dahas%C4%B1.28255/">Kış Güncelleme Paketi #4 - Skyblock Revival ve Dahası</a>
-</div>
-<div class="primaryContent">
-<div class="metaData">
-<span class="statData"><div class="keyIcon comments"></div>11</span>
-<span class="statData"><div class="keyIcon views"></div>969</span>
-<span class="dateData">
-<div class="keyIcon sticky"></div>
-<strong style="font-weight:bold;">Yazar: </strong><a href="uyeler/uniodex.1/" class="username">UnioDex</a> <strong style="font-weight:bold;">Tarih:</strong> <a href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-4-skyblock-revival-ve-dahas%C4%B1.28255/">18 Oca 2019</a> <a href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-4-skyblock-revival-ve-dahas%C4%B1.28255/">11:11</a>
-</span>
-</div>
-<div class="messageUserBlock"><div class="avatarHolder">
-<a href="uyeler/uniodex.1/" class="avatar Av1s Tooltip" title="UnioDex" itemprop="photo" data-avatarhtml="true"><span class="img s" style="background-image: url('https://minotar.net/helm/UnioDex/48.png')"></span></a>
-</div></div>
-<div class="baseHtml excerptContent ">
-Merhaba UnioCraft! 15 tatilde de yepyeni güncellemelerle devam ediyoruz! Bu güncellemeyle birlikte Skyblock&#039;taki rekabeti canlandıracak bir çok değişiklik yapıldı. Ayrıca Factions için de güncellemeler var. Fakat büyük çoğunlukla bug çözmekle uğraştığımız bir hafta olduğu için çözülen bugların sayısı daha fazla. İşte yenilikler:<br />
-<br />
-Güncelleme Cumartesi 13:00&#039;da sizlerle!<br />
-<br />
-<b><span style="font-family: 'Courier New'"><span style="font-size: 24px"><span style="color: #b30000">-- Skyblock Yeni Seviye Blokları -- </span></span></span></b><br />
-<img src="https://www.uniocraft.com/attachments/hay-png.17677/" alt="hay.png" class="bbCodeImage LbImage" />
-<br />
-<br />
-Skyblock sunucusunda rekabetin ölmesi, /is top&#039;un sabit kalması gibi sebeplerden dolayı elmas bloktan daha değerli yeni seviye blokları getirildi! Sünger ve Ender Portalı Çerçevesi! Sünger, blok başına 50 level, Ender Portalı Çerçevesi 500 level verecek.<br />
-<br />
-<b><span style="font-family: 'Courier New'"><span style="font-size: 24px"><span style="color: #b30000">-- Skyblock Maden -- </span></span></span></b><br />
-<img src="https://www.uniocraft.com/attachments/attach2-png.17669/" alt="attach2.png" class="bbCodeImage LbImage" />
-<br />
-<br />
-Skyblock&#039;a da Factions&#039;ta olduğu gibi /warp Maden getiriliyor! Fakat bazı değişikliklerle....
-</div>
-</div>
-<div class="sectionFooter">
-<div class="continue">
-<a class="button" href="konu/k%C4%B1%C5%9F-g%C3%BCncelleme-paketi-4-skyblock-revival-ve-dahas%C4%B1.28255/">
-Devamını Oku...
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sectionMain articlePager">
-<div class="PageNav" data-page="1" data-range="2" data-start="2" data-end="6" data-last="15" data-sentinel="{{sentinel}}" data-baseurl="?page=%7B%7Bsentinel%7D%7D">
-<span class="pageNavHeader"> Toplam 15 sayfadan 1. sayfa</span>
-<nav>
-<a href="." class="currentPage " rel="start">1</a>
-<a class="PageNavPrev hidden">&larr;</a> <span class="scrollable"><span class="items">
-<a href="?page=2" class="">2</a>
-<a href="?page=3" class="">3</a>
-<a href="?page=4" class="">4</a>
-<a href="?page=5" class="">5</a>
-<a href="?page=6" class="">6</a>
-</span></span> <a class="PageNavNext ">&rarr;</a>
-<a href="?page=15" class="">15</a>
-<a href="?page=2" class="text">İleri &gt;</a>
-</nav>
-</div>
-</div>
-
-<form action="login/login" method="post" class="xenForm " id="login" style="display:none">
-<div class="ctrlWrapper">
-<dl class="ctrlUnit">
-<dt><label for="LoginControl">Kullanıcı adı yada e-posta:</label></dt>
-<dd><input type="text" name="login" id="LoginControl" class="textCtrl" tabindex="101" /></dd>
-</dl>
-<dl class="ctrlUnit">
-<dt>
-<label for="ctrl_password">Zaten hesabınız var mı?</label>
-</dt>
-<dd>
-<ul>
-<li><label for="ctrl_not_registered"><input type="radio" name="register" value="1" id="ctrl_not_registered" tabindex="105" />
-Hayır, şimdi hesap oluştur</label></li>
-<li><label for="ctrl_registered"><input type="radio" name="register" value="0" id="ctrl_registered" tabindex="105" checked="checked" class="Disabler" />
-Evet,hesabım var:</label></li>
-<li id="ctrl_registered_Disabler">
-<input type="password" name="password" class="textCtrl" id="ctrl_password" tabindex="102" />
-<div class="lostPassword"><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="106">Şifrenizi mi unuttunuz?</a></div>
-</li>
-</ul>
-</dd>
-</dl>
-<dl class="ctrlUnit submitUnit">
-<dt></dt>
-<dd>
-<input type="submit" class="button primary" value="Giriş Yap" tabindex="104" data-loginPhrase="Giriş Yap" data-signupPhrase="Üye ol" />
-<label for="ctrl_remember" class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_remember" tabindex="103" /> Beni hatırla</label>
-</dd>
-</dl>
-</div>
-<input type="hidden" name="cookie_check" value="1" />
-<input type="hidden" name="redirect" value="/" />
-<input type="hidden" name="_xfToken" value="" />
-</form>
-</div>
-</div>
-
-<aside class="uix_mainSidebar">
-<div class="inner_wrapper">
-<div class="sidebar">
-<div class="section loginButton">
-<div class="secondaryContent">
-<label id="SignupButton"><a href="register/" class="inner">Şimdi üye ol!</a></label>
-</div>
-</div>
-<div class="section widget_LastVIPBuyers" id="widget_23">
-<div class="secondaryContent">
-<h3>En Son VIP Alanlar</h3>
-<style>
-		.pure-table {
-			/* Remove spacing between table cells (from Normalize.css) */
-			border-collapse: collapse;
-			border-spacing: 0;
-			empty-cells: show;
-			border: 1px solid #cbcbcb;
-		}
-
-		.pure-table caption {
-			color: #000;
-			font: italic 85%/1 arial, sans-serif;
-			padding: 1em 0;
-			text-align: center;
-		}
-		
-		.pure-table caption, th {
-			text-align: center;
-		}
-
-		.pure-table td,
-		.pure-table th {
-			border-left: 1px solid #cbcbcb;/*  inner column border */
-			border-width: 0 0 0 1px;
-			font-size: inherit;
-			margin: 0;
-			overflow: visible; /*to make ths where the title is really long work*/
-			padding: 0.5em 1em; /* cell padding */
-		}
-
-		/* Consider removing this next declaration block, as it causes problems when
-		there's a rowspan on the first cell. Case added to the tests. issue#432 */
-		.pure-table td:first-child,
-		.pure-table th:first-child {
-			border-left-width: 0;
-		}
-
-		.pure-table thead {
-			background-color: #e0e0e0;
-			color: #000;
-			text-align: center;
-			vertical-align: bottom;
-		}
-
-		.pure-table td {
-			background-color: transparent;
-		}
-		.pure-table-odd td {
-			background-color: #f2f2f2;
-		}
-
-		/* nth-child selector for modern browsers */
-		.pure-table-striped tr:nth-child(2n-1) td {
-			background-color: #f2f2f2;
-		}
-
-		/* BORDERED TABLES */
-		.pure-table-bordered td {
-			border-bottom: 1px solid #cbcbcb;
-		}
-		.pure-table-bordered tbody > tr:last-child > td {
-			border-bottom-width: 0;
-		}
-
-
-		/* HORIZONTAL BORDERED TABLES */
-
-		.pure-table-horizontal td,
-		.pure-table-horizontal th {
-			border-width: 0 0 1px 0;
-			border-bottom: 1px solid #cbcbcb;
-		}
-		.pure-table-horizontal tbody > tr:last-child > td {
-			border-bottom-width: 0;
-		}
-
-		.pure-table-odd td, .pure-table-striped tr:nth-child(2n-1) td {
-			background-color: #f9f9f9;
-		}
-		</style>
-<table style="table-layout: fixed;font-size: 13px;width: 100%;border-right: 0;border-left: 0;text-align: center;" class="pure-table pure-table-bordered pure-table-striped">
-<thead style="font-size: 10.5pt;color: #FFFFFF;background-color: rgb(121,7,9);text-align: center;vertical-align: middle;">
-<tr>
-<th>Oyuncu</th>
-<th>VIP Türü</th>
-<th>Sunucu</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img width='32' src='https://minotar.net/avatar/frodoxX' alt='frodoxX' /><br> frodoxX</td>
-<td>VIP</td>
-<td>Factions</td>
-</tr>
-<tr>
-<td><img width='32' src='https://minotar.net/avatar/iByKoyucu' alt='iByKoyucu' /><br> iByKoyucu</td>
-<td>VIP+</td>
-<td>Factions</td>
-</tr>
-<tr>
-<td><img width='32' src='https://minotar.net/avatar/CrazyWolf2852' alt='CrazyWolf2852' /><br> CrazyWolf2852</td>
-<td>VIP</td>
-<td>Factions</td>
-</tr>
-<tr>
-<td><img width='32' src='https://minotar.net/avatar/xPLAINED_' alt='xPLAINED_' /><br> xPLAINED_</td>
-<td>VIP</td>
-<td>Factions</td>
-</tr>
-<tr>
-<td><img width='32' src='https://minotar.net/avatar/iNox' alt='iNox' /><br> iNox</td>
-<td>UVIP</td>
-<td>Factions</td>
-</tr></tbody>
-</table>
-</div>
-</div>
-<div class="section profilePostList widget_Threads" id="widget_1">
-<div class="secondaryContent">
-<h3>Son Mesajlar</h3>
-<ul>
-<li id="thread-30012" class="threadListItem" data-author="oyunimparatoru">
-<a href="uyeler/oyunimparatoru.1079543/" class="avatar Av1079543s" data-avatarhtml="true"><img src="data/avatars/s/1079/1079543.jpg?1532284339" width="48" height="48" alt="oyunimparatoru" /></a>
-<div class="messageInfo">
-<div class="messageContent">
-<div class="title">
-<a href="mesaj/76970/"><span class="prefix prefixLightGreen">HackPvP</span> Aradan 2 sene geçti biteli.</a>
-</div>
-</div>
-<div class="additionalRow muted">
-Son Mesaj: oyunimparatoru, <abbr class="DateTime" data-time="1554474604" data-diff="2596" data-datestring="5 Nis 2019" data-timestring="17:30">5 Nis 2019 17:30</abbr>
-</div>
-<div class="additionalRow muted">
-Bölüm: <a href="forum/%C3%96neri-ve-fikirler.53/" class="forumLink">Öneri ve Fikirler</a>
-</div>
-</div>
-</li>
-<li id="thread-30074" class="threadListItem" data-author="MarkoStrqafe">
-<a href="uyeler/markostrqafe.1130509/" class="avatar Av1130509s" data-avatarhtml="true"><img src="data/avatars/s/1130/1130509.jpg?1553608086" width="48" height="48" alt="MarkoStrqafe" /></a>
-<div class="messageInfo">
-<div class="messageContent">
-<div class="title">
-<a href="mesaj/76968/"><span class="prefix prefixOrange">Skyblock1</span> Skyblock mu ? Metin2 mi?</a>
-</div>
-</div>
-<div class="additionalRow muted">
-Son Mesaj: MarkoStrqafe, <abbr class="DateTime" data-time="1554465966" data-diff="11234" data-datestring="5 Nis 2019" data-timestring="15:06">5 Nis 2019 15:06</abbr>
-</div>
-<div class="additionalRow muted">
-Bölüm: <a href="forum/%C3%96neri-ve-fikirler.53/" class="forumLink">Öneri ve Fikirler</a>
-</div>
-</div>
-</li>
-<li id="thread-30087" class="threadListItem" data-author="MarkoStrqafe">
-<a href="uyeler/markostrqafe.1130509/" class="avatar Av1130509s" data-avatarhtml="true"><img src="data/avatars/s/1130/1130509.jpg?1553608086" width="48" height="48" alt="MarkoStrqafe" /></a>
-<div class="messageInfo">
-<div class="messageContent">
-<div class="title">
-<a href="mesaj/76967/">cevher</a>
-</div>
-</div>
-<div class="additionalRow muted">
-Son Mesaj: MarkoStrqafe, <abbr class="DateTime" data-time="1554465741" data-diff="11459" data-datestring="5 Nis 2019" data-timestring="15:02">5 Nis 2019 15:02</abbr>
-</div>
-<div class="additionalRow muted">
-Bölüm: <a href="forum/soru-cevap.34/" class="forumLink">Soru &amp; Cevap</a>
-</div>
-</div>
-</li>
-<li id="thread-11269" class="threadListItem" data-author="MuratBey_124">
-<a href="uyeler/muratbey_124.1122915/" class="avatar Av1122915s" data-avatarhtml="true"><img src="data/avatars/s/1122/1122915.jpg?1523302005" width="48" height="48" alt="MuratBey_124" /></a>
-<div class="messageInfo">
-<div class="messageContent">
-<div class="title">
-<a href="mesaj/76964/">SkyBlock Market Görünüm Seçenekleri</a>
-</div>
-</div>
-<div class="additionalRow muted">
-Son Mesaj: MuratBey_124, <abbr class="DateTime" data-time="1554462152" data-diff="15048" data-datestring="5 Nis 2019" data-timestring="14:02">5 Nis 2019 14:02</abbr>
-</div>
-<div class="additionalRow muted">
-Bölüm: <a href="forum/skyblock1.11/" class="forumLink">Skyblock1</a>
-</div>
-</div>
-</li>
-<li id="thread-29836" class="threadListItem" data-author="_Anshton">
-<a href="uyeler/_anshton.518477/" class="avatar Av518477s" data-avatarhtml="true"><img src="data/avatars/s/518/518477.jpg?1545469905" width="48" height="48" alt="_Anshton" /></a>
-<div class="messageInfo">
-<div class="messageContent">
-<div class="title">
-<a href="mesaj/76959/">Yeni komut</a>
-</div>
-</div>
-<div class="additionalRow muted">
-Son Mesaj: _Anshton, <abbr class="DateTime" data-time="1554452065" data-diff="25135" data-datestring="5 Nis 2019" data-timestring="11:14">5 Nis 2019 11:14</abbr>
-</div>
-<div class="additionalRow muted">
-Bölüm: <a href="forum/skyblock1.11/" class="forumLink">Skyblock1</a>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div id="PreviewTooltip">
-<span class="arrow"><span></span></span>
-<div class="section">
-<div class="primaryContent previewContent">
-<span class="PreviewContents">Yükleniyor...</span>
-</div>
-</div>
-</div>
-<div class="section widget_ForumStats" id="widget_24">
-<div class="secondaryContent statsList">
-<h3>Forum İstatistikleri</h3>
-<div class="pairsJustified">
-<dl class="discussionCount"><dt>Konu:</dt>
-<dd>27,441</dd></dl>
-<dl class="messageCount"><dt>Mesaj:</dt>
-<dd>71,534</dd></dl>
-<dl class="memberCount"><dt>Üye:</dt>
-<dd>1,177,414</dd></dl>
-<dl class="mostCount"><dt>Çevrimiçi Rekoru:</dt>
-<dd class="Tooltip" title="26 May 2018">650</dd></dl>
-<dl><dt>Son Üyemiz:</dt>
-<dd><a href="uyeler/pant33.1319796/" class="username" dir="auto" text="rich">Pant33</a></dd></dl>
-
-</div>
-</div>
-</div>
-<div class="section widget_RawHtml" id="widget_25">
-<div class="secondaryContent">
-<h3>Twitter</h3>
-<center><a class="twitter-timeline" data-lang="tr" data-width="300" data-height="350" data-dnt="true" href="https://twitter.com/UnioCraft">Tweets by UnioCraft</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8" type="7d95d3601f6bd2b818a1832a-text/javascript"></script></center>
-</div>
-</div>
-<div class="section widget_RawHtml" id="widget_12">
-<div class="secondaryContent">
-<h3>Youtube</h3>
-<script src="https://apis.google.com/js/platform.js" type="7d95d3601f6bd2b818a1832a-text/javascript"></script>
-<center><div class="g-ytsubscribe" data-channel="UnioCraft" data-layout="full" data-count="default"></div></center>
-</div>
-</div>
-<iframe src="https://discordapp.com/widget?id=312178253844709376&theme=dark" width="300" height="350" allowtransparency="true" frameborder="0"></iframe>
-</div>
-</div>
-</aside>
-</div>
-</div>
-</div>
-</div>
-</div>
-<footer>
-<div class="footer">
-<div class="pageContent">
-<div class="pageWidth">
-<ul class="footerLinks">
-<li><a href="https://www.uniocraft.com/" class="homeLink">Ana Sayfa</a></li>
-<li><a href="https://www.uniocraft.com/destek/">Bize Ulaşın</a></li>
-<li><a href="help/">Yardım</a></li>
-<li><a href="https://www.uniocraft.com/konu/forum-kuralları.40/">Kurallar</a></li>
-<li class="topLink"><a href="/#XenForo"><i class="uix_icon uix_icon-jumpToTop"></i> <span class="uix_hide">Yukarı git</span></a></li>
- </ul>
-<span class="helper"></span>
-</div>
-</div>
-</div>
-<div id="uix_stickyFooterSpacer"></div>
-<div class="bigFooter">
-<div class="pageContent">
-<div class="pageWidth">
-<ul class="bigFooterRow bigFooterRow--mainRow bigFooterRow--has4Columns">
-<li class="bigFooterCol bigFooterCol--col1">
-<div class="section">
-<h3 class="bigFooterHeader">
-<i class="uix_icon fa fa-caret-square-o-right"></i>
-Hakkımızda
-</h3>
-2014 yılında küçük bir Factions sunucusu olarak hayata başlayan sunucumuz bugünlerde 1 milyon üyeye ulaştı ve aşıyor! Sunucumuz sürekli gelen güncellemelerle daima aktif tutuluyor. Tüm oyuncularımıza ilk günkü gibi değer veriyoruz ve onları dinliyoruz.
-</div>
-</li>
-<li class="bigFooterCol bigFooterCol--col2">
-<div class="section">
-<h3 class="bigFooterHeader">
-<i class="uix_icon fa fa-info-circle"></i>
-Yararlı Linkler
-</h3>
-<ul class="footerMenu">
-<li><a href="account/personal-details">Hesap Ayarları</a></li>
-<li><a href="#">Destek</a></li>
-<li><a href="pages/market">Kredi Yükle</a></li>
-<li><a href="account/personal-security">Şifre Değiştir</a></li>
-<li><a href="konu/oyun-kuralları.15">Oyun Kuralları</a></li>
-<li><a href="https://www.uniocraft.com/konu/moderatör-alım-Şartları-ve-Şablonu.15759/">Yetkili Alımları</a></li>
-</ul>
-</div>
-</li>
-<li class="bigFooterCol bigFooterCol--col3">
-<div class="section">
-<h3 class="bigFooterHeader">
-<i class="uix_icon fa fa-facebook-square"></i>
-Facebook'ta Bizi Beğenin
-</h3>
-<div class="fb-page" data-href="https://www.facebook.com/uniocraft" data-width="280" data-hide-cover="true" data-show-facepile="true" data-show-posts="false"></div>
-</div>
-</li>
-<li class="bigFooterCol bigFooterCol--col4">
-<div class="section">
-<h3 class="bigFooterHeader">
-<i class="uix_icon fa fa-shopping-cart"></i>
-Market
-</h3>
-Bir şeyler satın alarak oyunda bolca havalı özelliğe ve güzel eşyalara sahip olabilirsiniz! Ayrıca bize destek olarak sunucumuzun hayatta kalmasını da sağlarsınız! Hemen marketimizi ziyaret etmek için aşağıdaki butona tıklayın!
-<br><br>
-<a class="callToAction" href="pages/market"><span>Marketi Ziyaret Et</span></a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="footerLegal">
-<div class="pageWidth">
-© <a href="/">UnioCraft 2014-2019 Tüm Hakları Saklıdır.</a><br><a rel="nofollow" href="https://xenforo.com" class="concealed">Forum software by XenForo™ <span>©2010-2019 XenForo Ltd.</span></a><br><span>Bu sitede satılan ürünlerin tüm satış hakkı <a class="concealed" href="https://www.paywant.com" rel="nofollow">Paywant Technology LTD.</a> ye aittir.</span>
-</div>
-<div id="uix_jumpToFixed">
-<a href="#XenForo" title="Yukarı git" data-position="top"><i class="uix_icon uix_icon-jumpToTop"></i></a>
-<a href="#XenForo" title="Alt" data-position="bottom"><i class="uix_icon uix_icon-jumpToBottom"></i></a>
-</div>
-</footer>
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">
-
-
-jQuery.extend(true, XenForo,
-{
-	visitor: { user_id: 0 },
-	serverTimeInfo:
-	{
-		now: 1554477200,
-		today: 1554411600,
-		todayDow: 5
-	},
-	_lightBoxUniversal: "0",
-	_enableOverlays: "1",
-	_animationSpeedMultiplier: "0.5",
-	_overlayConfig:
-	{
-		top: "10%",
-		speed: 100,
-		closeSpeed: 50,
-		mask:
-		{
-			color: "rgb(255, 255, 255)",
-			opacity: "0.6",
-			loadSpeed: 100,
-			closeSpeed: 50
-		}
-	},
-	_ignoredUsers: [],
-	_loadedScripts: {"EWRporta2_Global":true,"message_user_info":true,"EWRporta2":true,"EWRporta2_ArticleList":true,"profile_post_list_simple":true,"thread_list_simple":true,"login_bar":true,"moderator_bar":true,"uix_extendedFooter":true,"js\/8wayrun\/EWRporta2_ajax.js?_v=21":true},
-	_cookieConfig: { path: "/", domain: "", prefix: "xf_"},
-	_csrfToken: "",
-	_csrfRefreshUrl: "login/csrf-token-refresh",
-	_jsVersion: "66d2fe1a",
-	_noRtnProtect: false,
-	_noSocialLogin: false
-});
-jQuery.extend(XenForo.phrases,
-{
-	cancel: "İptal",
-
-	a_moment_ago:    "Az önce",
-	one_minute_ago:  "1 dakika önce",
-	x_minutes_ago:   "%minutes% dakika önce",
-	today_at_x:      "Bugün: %time%",
-	yesterday_at_x:  "Dün %time%",
-	day_x_at_time_y: "%day% %time%",
-
-	day0: "Pazar",
-	day1: "Pazartesi",
-	day2: "Salı",
-	day3: "Çarşamba",
-	day4: "Perşembe",
-	day5: "Cuma",
-	day6: "Cumartesi",
-
-	_months: "Ocak,Şubat,Mart,Nisan,Mayıs,Haziran,Temmuz,Ağustos,Eylül,Ekim,Kasım,Aralık",
-	_daysShort: "Paz,Pzt,Sal,Çrş,Prş,Cum,Cts",
-
-	following_error_occurred: "Aşağıdaki hatalar oluşmuştur",
-	server_did_not_respond_in_time_try_again: "Sunucu zamanında yanıt vermedi. Tekrar deneyin.",
-	logging_in: "Giriş yapılıyor",
-	click_image_show_full_size_version: "Resmin tam boyutunu görmek için tıklayın.",
-	show_hidden_content_by_x: "{names} tarafından gizli içerikleri göster"
-});
-
-// Facebook Javascript SDK
-XenForo.Facebook.appId = "";
-XenForo.Facebook.forceInit = false;
-
-
-</script>
-<script type="application/ld+json">
-{
-	"@context": "http://schema.org",
-	"@type": "WebSite",
-	"url": "http://www.uniocraft.com/",
-	"potentialAction": {
-		"@type": "SearchAction",
-		"target": "http://www.uniocraft.com/arama/search?keywords={search_keywords}",
-		"query-input": "required name=search_keywords"
-	}
-}
-</script>
-</div>
-<div class="uix_wrapperFix" style="height: 1px; margin-top: -1px;"></div>
-</div>
-</div>
-<script type="7d95d3601f6bd2b818a1832a-text/javascript">
-
-</script>
-<div class="breadcrumbMeta">
-<nav>
-<fieldset class="breadcrumb">
-<a href="misc/quick-navigation-menu?selected=articles" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Hızlı navigasyonu aç"><i class="uix_icon uix_icon-sitemap"></i></a>
-<div class="boardTitle"><strong>UnioCraft</strong></div>
-<span class="crumbs">
-<span class="crust selectedTabCrumb">
-<a href="https://www.uniocraft.com/" class="crumb"><span><i class="uix_icon uix_icon-home" title="Anasayfa"></i></span></a>
-<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
-</span>
-</span>
-</fieldset>
-</nav>
-</div>
-
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="7d95d3601f6bd2b818a1832a-|49" defer=""></script></body>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#141414" />
+    <meta content="banner.png" type="image/png" />
+    <link rel="icon" href="icon.png" type="image/ico" />
+    <meta content="Become a crew member of an interdimensional express!" property="og:description" />
+    <meta name="description" content="Become a crew member of an interdimensional express!" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="twitter:title" content="Voidtrain" />
+    <meta name="twitter:description" content="Become a crew member of an interdimensional express!" />
+    <script type="application/ld+json">
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "item": {
+            "name": "Games",
+            "@id": "https:\/\/itch.io\/games"
+          },
+          "position": 1,
+          "@type": "ListItem"
+        }, {
+          "item": {
+            "name": "Adventure",
+            "@id": "https:\/\/itch.io\/games\/genre-adventure"
+          },
+          "position": 2,
+          "@type": "ListItem"
+        }, {
+          "item": {
+            "name": "Free",
+            "@id": "https:\/\/itch.io\/games\/free"
+          },
+          "position": 3,
+          "@type": "ListItem"
+        }],
+        "@context": "http:\/\/schema.org"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "name": "Voidtrain",
+        "description": "Become a crew member of an interdimensional express!",
+        "@type": "Product",
+        "@context": "http:\/\/schema.org\/"
+      }
+    </script>
+    <title>Voidtrain</title>
+    <meta name="csrf_token" value="IjNpeGVBOE5XTWk4b3VRSCBVUiBCVVRUIEYwWUs1cXJSblBmc0FTMiI=.Gp7BAkzX/zD4qaserxmuUhMW8O8=" />
+    <link rel="stylesheet" href="https://static.itch.io/game.css?1660335184" />
+    <script type="text/javascript">
+      window.itchio_translations_url = 'https://static.itch.io/translations';
+    </script>
+    <script type="text/javascript" src="https://static.itch.io/lib.js?1660335184"></script>
+    <script type="text/javascript" src="https://static.itch.io/bundle.min.js?1660335184"></script>
+    <script type="text/javascript" src="https://static.itch.io/lib/jquery.maskMoney.js"></script>
+    <script id="lib_react_src" data-src="https://static.itch.io/react.min.js?1660335184"></script>
+    <script type="text/javascript" src="https://static.itch.io/game.min.js?1660335184"></script>
+    <script type="text/javascript">
+      I.current_user = null;
+      I.subdomain = true;
+    </script>
+    <style type="text/css" id="game_theme">
+      :root {
+        --itchio_ui_bg: #2c2c2c;
+        --itchio_ui_bg_dark: #262626
+      }
+
+      .wrapper {
+        --itchio_font_family: '04b_03';
+        --itchio_bg_color: #141414;
+        --itchio_bg2_color: rgba(20, 20, 20, 1);
+        --itchio_bg2_sub: #2b2b2b;
+        --itchio_text_color: #ffffff;
+        --itchio_link_color: #0098df;
+        --itchio_border_color: #3a3a3a;
+        --itchio_button_color: #0098df;
+        --itchio_button_fg_color: #ffffff;
+        --itchio_button_shadow_color: #0098df;
+        background-color: #141414;
+        /*! */
+        /* */
+      }
+
+      .inner_column {
+        color: #ffffff;
+        font-family: '04b_03', Lato, LatoExtended, sans-serif;
+        background-color: rgba(20, 20, 20, 1)
+      }
+
+      .inner_column ::selection {
+        color: #ffffff;
+        background: #0098df
+      }
+
+      .inner_column ::-moz-selection {
+        color: #ffffff;
+        background: #0098df
+      }
+
+      .inner_column h1,
+      .inner_column h2,
+      .inner_column h3,
+      .inner_column h4,
+      .inner_column h5,
+      .inner_column h6 {
+        font-family: inherit;
+        font-weight: bold;
+        color: inherit
+      }
+
+      .inner_column a,
+      .inner_column .footer a {
+        color: #0098df
+      }
+
+      .inner_column .button,
+      .inner_column .button:hover,
+      .inner_column .button:active {
+        background-color: #0098df;
+        color: #ffffff;
+        text-shadow: 0 1px 0px #0098df
+      }
+
+      .inner_column hr {
+        background-color: #3a3a3a
+      }
+
+      .inner_column table {
+        border-color: #3a3a3a
+      }
+
+      .inner_column .redactor-box .redactor-toolbar li a {
+        color: #0098df
+      }
+
+      .inner_column .redactor-box .redactor-toolbar li a:hover,
+      .inner_column .redactor-box .redactor-toolbar li a:active,
+      .inner_column .redactor-box .redactor-toolbar li a.redactor-act {
+        background-color: #0098df !important;
+        color: #ffffff !important;
+        text-shadow: 0 1px 0px #0098df !important
+      }
+
+      .inner_column .redactor-box .redactor-toolbar .re-button-tooltip {
+        text-shadow: none
+      }
+
+      .game_frame {
+        background: #2b2b2b;
+        /*! */
+        /* */
+      }
+
+      .game_frame .embed_info {
+        background-color: rgba(20, 20, 20, 0.85)
+      }
+
+      .game_loading .loader_bar .loader_bar_slider {
+        background-color: #0098df
+      }
+
+      .view_game_page .reward_row,
+      .view_game_page .bundle_row {
+        border-color: #2b2b2b !important
+      }
+
+      .view_game_page .game_info_panel_widget {
+        background: rgba(43, 43, 43, 1)
+      }
+
+      .view_game_page .star_value .star_fill {
+        color: #0098df
+      }
+
+      .view_game_page .rewards .quantity_input {
+        background: rgba(43, 43, 43, 1);
+        border-color: rgba(255, 255, 255, 0.5);
+        color: #ffffff
+      }
+
+      .view_game_page .right_col {
+        display: block
+      }
+
+      .game_devlog_page li .meta_row .post_likes {
+        border-color: #2b2b2b
+      }
+
+      .game_devlog_post_page .post_like_button {
+        box-shadow: inset 0 0 0 1px #3a3a3a
+      }
+
+      .game_comments_widget .community_post .post_footer a,
+      .game_comments_widget .community_post .post_footer .vote_btn,
+      .game_comments_widget .community_post .post_header .post_date a,
+      .game_comments_widget .community_post .post_header .edit_message {
+        color: rgba(255, 255, 255, 0.5)
+      }
+
+      .game_comments_widget .community_post .reveal_full_post_btn {
+        background: linear-gradient(to bottom, transparent, #141414 50%, #141414);
+        color: #2f9228
+      }
+
+      .game_comments_widget .community_post .post_votes {
+        border-color: rgba(255, 255, 255, 0.2)
+      }
+
+      .game_comments_widget .community_post .post_votes .vote_btn:hover {
+        background: rgba(255, 255, 255, 0.05)
+      }
+
+      .game_comments_widget .community_post .post_footer .vote_btn {
+        border-color: rgba(255, 255, 255, 0.5)
+      }
+
+      .game_comments_widget .community_post .post_footer .vote_btn span {
+        color: inherit
+      }
+
+      .game_comments_widget .community_post .post_footer .vote_btn:hover,
+      .game_comments_widget .community_post .post_footer .vote_btn.voted {
+        background-color: #0098df;
+        color: #ffffff;
+        text-shadow: 0 1px 0px #0098df;
+        border-color: #0098df
+      }
+
+      .game_comments_widget .form .redactor-box,
+      .game_comments_widget .form .click_input,
+      .game_comments_widget .form .forms_markdown_input_widget {
+        border-color: rgba(255, 255, 255, 0.5);
+        background: transparent
+      }
+
+      .game_comments_widget .form .redactor-layer,
+      .game_comments_widget .form .redactor-toolbar,
+      .game_comments_widget .form .click_input,
+      .game_comments_widget .form .forms_markdown_input_widget {
+        background: rgba(43, 43, 43, 1)
+      }
+
+      .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button {
+        color: inherit;
+        opacity: 0.6
+      }
+
+      .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:hover,
+      .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:active {
+        opacity: 1;
+        background-color: #0098df !important;
+        color: #ffffff !important;
+        text-shadow: 0 1px 0px #0098df !important
+      }
+
+      .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar,
+      .game_comments_widget .form .forms_markdown_input_widget li {
+        border-color: rgba(255, 255, 255, 0.5)
+      }
+
+      .game_comments_widget .form textarea {
+        border-color: rgba(255, 255, 255, 0.5);
+        background: rgba(43, 43, 43, 1);
+        color: inherit
+      }
+
+      .game_comments_widget .form .redactor-toolbar {
+        border-color: rgba(255, 255, 255, 0.5)
+      }
+
+      .game_comments_widget .hint {
+        color: rgba(255, 255, 255, 0.5)
+      }
+
+      .game_community_preview_widget .community_topic_row .topic_tag {
+        background-color: #2b2b2b
+      }
+
+      .footer .svgicon,
+      .view_game_page .more_information_toggle .svgicon {
+        fill: #ffffff !important
+      }
+    </style>
+  </head>
+    <div id="wrapper" class="main wrapper">
+      <div id="inner_column" class="inner_column size_medium family_pixel">
+        <div id="header" class="header has_image align_center">
+          <img alt="Voidtrain" src="banner.png" />
+          <h1 itemprop="name" class="game_title">Voidtrain</h1>
+        </div>
+        <div id="view_game_page_90945" class="view_game_page page_widget">
+          <div class="header_buy_row">
+            <p>A downloadable game</p>
+          </div>
+          <div class="columns">
+            <div class="left_col column">
+              <div class="formatted_description user_formatted">
+                <p>Become a crew member of an interdimensional express! Discover a new mysterious world inhabited by amazing creatures, dangers and surprises. Upgrade your train, gather new materials and build better weapons!<br>
+                </p>
+                <p>Available in single player, or in online multiplayer with up to 4 people.</p>
+                <p>
+                  <strong>Features</strong>
+                  <br>
+                </p>
+                <ul>
+                  <li>&nbsp;The Interdimensional Express: Start with a tiny trolley. What comes out of it further depends on you. Build, expand, customize, choose the type of engine between different eras - and play the game your way!</li>
+                  <li>&nbsp;Discover the void world: Together with your mechanic, learn to survive in a new environment. A unique world with its own rules - where gravity sometimes does not apply. Gather resources, explore the stations and islands scattered along the way, and hunt the creatures that inhabit them.
+                </li>
+                  <li>Unique adventure: The generation of the environment, events and objects around the player, as well as the choice of the player himself, will make every adventure you have in Voidtrain truly stand out. Each time there's a new path to go on, new lands to discover, and a new train to build!</li>
+                </ul>
+                <p>
+                  <strong>Controls</strong>
+                </p>
+                <ul>
+                  <li>Player movement: Arrow keys, WASD or Gamepad Left Stick </li>
+                  <li>Run: Left SHIFT key or Gamepad right trigger </li>
+                  <li>Actions: E key or Gamepad A button </li>
+                  <li>Flashlight: L Key or Gamepad Y button </li>
+                  <li>Map: TAB Key or Gamepad SELECT button </li>
+                  <li>Menu: ESC Key or Gamepad Start button</li>
+                </ul>
+                <p>
+                  <strong>Supported languages</strong>
+                </p>
+                <ul>
+                  <li>
+                    <strong></strong>English
+                  </li>
+                  <li>Russian</li>
+                </ul>
+                <p>You can add it to your Steam wishlist from&nbsp; <a href="https://store.steampowered.com/app/1159690/Voidtrain/" target="_blank" rel="nofollow noopener" referrerpolicy="origin">https://store.steampowered.com/app/1159690/Voidtrain/</a>
+                </p>
+              </div>
+              <div class="more_information_toggle">
+                <div class="toggle_row">
+                  <a href="javascript:void(0)" class="toggle_info_btn">More information <svg aria-hidden version="1.1" role="img" viewBox="0 0 37 20" class="svgicon icon_down_tick" width="12" height="6">
+                      <path d="m2.0858 0c-1.1535 0-2.0858 0.86469-2.0858 1.9331 0 0.5139 0.21354 1.0183 0.38704 1.1881l18.113 16.879 18.112-16.879c0.174-0.1696 0.388-0.674 0.388-1.1879 0-1.0684-0.932-1.9331-2.086-1.9331-0.577 0-1.111 0.23008-1.49 0.57992l-14.924 13.894-14.925-13.893c-0.3777-0.34998-0.9134-0.581-1.4902-0.581z" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="info_panel_wrapper">
+                  <div class="game_info_panel_widget">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>Status</td>
+                          <td>
+                            <a href="https://hypetraindigital.com/">In development</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Author</td>
+                          <td>
+                            <a href="https://voidtrain.github.io/">HypeTrain Digital</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Genre</td>
+                          <td>
+                            <a href="https://store.steampowered.com/tags/en/Adventure/">Adventure</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Made with</td>
+                          <td>
+                            <a href="https://www.unrealengine.com/en-US">Unreal Engine</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tags</td>
+                          <td>
+                            <a href="https://store.steampowered.com/tags/en/Action/">Action</a>, <a href="https://store.steampowered.com/tags/en/Indie/">Indie</a>, <a href="https://store.steampowered.com/tags/en/Simulation/">Simulation</a>
+                        <tr>
+                        </tr>
+                          <td>Languages</td>
+                          <td>
+                            <a>English</a>, <a>Russian</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Inputs</td>
+                          <td>
+                            <a>Keyboard</a>, <a>Xbox controller</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Links</td>
+                          <td>
+                            <a rel="nofollow noopener" href="https://twitter.com/playvoidtrain">Twitter</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="game_comments_widget">
+                <h2 id="comments">Download</h2>
+                <p class="form_placeholder">
+                  <a data-register_action="comment" href="https://cdn.discordapp.com/attachments/1019686047946375168/1019686931723976824/Voidtrain.rar">Click to download</a> Beta version.
+                </p>
+                <div id="community_topic_posts_widget_93176" class="community_topic_posts_widget">
+                  <div class="community_post_list_widget">
+                    <script type="text/template" id="vote_counts_tpl"><% if (up_score > 0) { %>
+													<span class="upvotes">(+{{up_score}})</span><% } %><% if (down_score > 0) { %>
+													<span class="downvotes">(-{{down_score}})</span><% } %>
+												</script>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  new I.CommunityViewTopic('#community_topic_posts_widget_93176', {
+                    "report_url": "https:\/\/itch.io\/post\/:post_id\/report"
+                  })
+                </script>
+              </div>
+            </div>
+            <div class="right_col column">
+              <div class="video_embed">
+                <div class="video_embed_widget" id="video_embed_widget_41181" style="padding-bottom: 56.25%; position: relative;">
+                  <iframe frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%; left: 0; right: 0" src="https://www.youtube.com/embed/t5VVyWXtTaw"></iframe>
+                </div>
+              </div>
+              <div class="screenshot_list">
+                <a href="ss_550efaeb7c9397f3406606c49b427485a9183620.1920x1080.png" target="_blank" data-image_lightbox="true">
+                  <img data-screenshot_id="5800712" src="ss_550efaeb7c9397f3406606c49b427485a9183620.1920x1080.png" class="screenshot" srcset="ss_550efaeb7c9397f3406606c49b427485a9183620.1920x1080.png 1x, ss_550efaeb7c9397f3406606c49b427485a9183620.1920x1080.png 2x" />
+                </a>
+                <a href="ss_35713a525f77a72998c4e24734db9a21ecf75447.1920x1080.png" target="_blank" data-image_lightbox="true">
+                  <img data-screenshot_id="5800717" src="ss_35713a525f77a72998c4e24734db9a21ecf75447.1920x1080.png" class="screenshot" srcset="ss_35713a525f77a72998c4e24734db9a21ecf75447.1920x1080.png 1x, ss_35713a525f77a72998c4e24734db9a21ecf75447.1920x1080.png 2x" />
+                </a>
+                <a href="ss_b6d329f45ab86ea61ed46e732c4954b386561941.1920x1080.png" target="_blank" data-image_lightbox="true">
+                  <img data-screenshot_id="5800720" src="ss_b6d329f45ab86ea61ed46e732c4954b386561941.1920x1080.png" class="screenshot" srcset="ss_b6d329f45ab86ea61ed46e732c4954b386561941.1920x1080.png 1x, ss_b6d329f45ab86ea61ed46e732c4954b386561941.1920x1080.png 2x" />
+                </a>
+                <a href="ss_6fd89f786eedb5bc2d816a32f4d94f02471a5c8e.1920x1080.png" target="_blank" data-image_lightbox="true">
+                  <img data-screenshot_id="5800722" src="ss_6fd89f786eedb5bc2d816a32f4d94f02471a5c8e.1920x1080.png" class="screenshot" srcset="ss_6fd89f786eedb5bc2d816a32f4d94f02471a5c8e.1920x1080.png 1x, ss_6fd89f786eedb5bc2d816a32f4d94f02471a5c8e.1920x1080.png 2x" />
+                </a>
+                <a href="ss_4aed9c156ceaf2b822eed7b1f8e85436547b933a.1920x1080.png" target="_blank" data-image_lightbox="true">
+                  <img data-screenshot_id="5800724" src="ss_4aed9c156ceaf2b822eed7b1f8e85436547b933a.1920x1080.png" class="screenshot" srcset="ss_4aed9c156ceaf2b822eed7b1f8e85436547b933a.1920x1080.png 1x, ss_4aed9c156ceaf2b822eed7b1f8e85436547b933a.1920x1080.png 2x" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          new I.ViewGame('#view_game_page_90945', {
+            "type": 1,
+            "slug": "voidtrain",
+            "id": 967023,
+            "hit_url": "https:\/\/voidtrain.github.io\/voidtrain\/rh\/eyJyIjoiaHR0cHM6XC9cL3d3dy5nb29nbGUuY29tXC8iLCJpZCI6OTY3MDIzLCJlIjoxNjYwNDE1NjEwfQ%3d%3d%2ez5Hnun30DcX6i6VtTSuNA2JUWq0%3d",
+            "min_price": 0,
+            "type_name": "default",
+            "actual_price": 0
+          }, {});
+        </script>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      I.setup_layout()
+    </script>
+    <script type="text/template" id="loading_lightbox_tpl"> <div aria-live="polite" class="lightbox loading_lightbox">
+						<div class="loader_outer">
+							<div class="loader_label">Loading</div>
+							<div class="loader_bar">
+								<div class="loader_bar_slider"></div>
+							</div>
+						</div>
+					</div>
+				</script>
+    <script type="text/javascript">
+      I.setup_page();
+    </script>
+  </body>
 </html>
